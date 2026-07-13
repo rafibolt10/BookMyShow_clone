@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- The Top Logo bar and buttons -->
+     <header>
+    <div class="toplogopanel">
+        <div class="logo">
+            <img src="./bookmyshow-logo.png" height="50px">
+        </div>
+        <div class="searchbar">
+            <i class="fa-brands fa-sistrix"></i>
+            <input type="text" id="searchbar" name="searchbar" placeholder="Search for Movies,Events, Plays, Sports and Activities">
+        </div>
+        <div class="locations">
+<a href="./locationpopup.html" target="_blank">
+           <select id="locations" name="locations">
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+            </select> </a>
+            
+        </div>
+        <div class="signin">
+            Sign In
+        </div>
+        
+        <div class="side"><input type="checkbox" id="menu-toggle"><label for="menu-toggle"><i class="fa-solid fa-bars" ></i></label></div>
+    </div>
+
+    <!-- hamburger side menu -->
+   
+    <div class="sidemenu-container">
+
+        <div class="sidemenu-topinfo">
+            <h2 class="sidemenuheader">Hey!<label for="menu-toggle" class="close-btn">
+                ✕
+            </label></h2>
+            <div class="sidbarlogininfo">
+                <img src="./gift_login.avif" alt="gift">
+                <p>Unlock special offers & <br> great benefits</p>
+                <a href=""><b>Login/Register</b></a>
+            </div>
+        </div>
+        <div class="sidemaininfo-container">
+            <div class="sidemaininfoblock">
+                <i class="fa-regular fa-bell"></i>
+                <div class="sidebarinfos">Notification</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="sidebarinfos">Your Orders
+                    <p>View all your booking & purchases</p></div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <i class="fa-solid fa-circle-play"></i>
+                <div class="sidebarinfos">Stream Library
+                    <p>Rented & Purchased Movies</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <img src="./Hamburger-SideMenu/playcreditcard.avif" >
+                <div class="sidebarinfos">Play Credit card
+                    <p>View your Play Credit Card detals and offers</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <img src="./Hamburger-SideMenu/helpandsupport.png">
+                <div class="sidebarinfos">Help & Support 
+                    <p>View commonly asked queries and Chat</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <i class="fa-solid fa-gear"></i>
+                <div class="sidebarinfos">Account & Settings 
+                    <p>Location, Payments, Permissions & More</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <img src="./Hamburger-SideMenu/rewards_1.png">
+                <div class="sidebarinfos">Rewards 
+                    <p>View your rewards & unlock new ones</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sidemaininfoblock">
+                <img src="./Hamburger-SideMenu/bookachange.avif">
+                <div class="sidebarinfos">BookAChange</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+     <!-- The Second menus on top bar list and hyperlinks menus -->
+<nav>
+     <div class="secondtopmenu">
+        <div class="movies"><a href="#">Movies</a></div>
+        <div class="stream"><a href="#">Stream</a></div>
+        <div class="events"><a href="#">Events</a></div>
+        <div class="plays"><a href="#">Plays</a></div>
+        <div class="sport"><a href="#">Sport</a></div>
+        <div class="activities"><a href="#">Activities</a></div>
+        <div class="listyourshow"><a href="#">Listyourshow</a></div>
+        <div class="offers"><a href="#">Offers</a></div>
+        <div class="gift cards"><a href="#">giftcards</a></div>
+     </div>
+    </nav>
+</header>
+<!-- Manual scroll image  -->
+
+    <div class="scroll">
+        <!-- <div class="div"  id="section1"><img src="./scrool images homepage/cashback.avif" >
+            <a href="#section2"><i class="fa-solid fa-angle-right"></i></a></div>
+        <div class="div" id="section2"><img src="./scrool images homepage/killbill.avif" >
+            <a  href="#section3"><i class="fa-solid fa-angle-right"></i></a></div>
+            <a id="section2" href="#section1"> <i id="leftscroll" class="fa-solid fa-angle-right" style="  transform: scaleX(-1);"></i></a>
+        <div class="div" id="section3"><img src="./scrool images homepage/snowking.avif" >
+            <a  href="#section2"><i class="fa-solid fa-angle-right" style="  transform: scaleX(-1);"></i></a></div> -->
+            <div class="scroll">
+                <div class="slider-track">
+                    <img src="./scrool images homepage/cashback.avif">
+                    <img src="./scrool images homepage/killbill.avif">
+                    <img src="./scrool images homepage/snowking.avif">
+            
+                    <!-- Duplicate images for smooth looping -->
+                    <img src="./scrool images homepage/cashback.avif">
+                    <img src="./scrool images homepage/killbill.avif">
+                    <img src="./scrool images homepage/snowking.avif">
+                </div>
+            </div>
+   
+        </div>
+   
+<main>
+     <!-- /* Chapter 4 : Recommended Movie images with manual scroll*/ -->
+     <div class="top">
+        <h1>Recommended Movies</h1>
+       <a href="#"> see all <i class="fa-solid fa-angle-right"></i> </a>
+    </div>
+<div class="moviesframe">
+   
+    <div class="moviesimg">
+        <a href="./Page - movie description/jigarmovie_page.html" ><div id="moviefirst" class="mimg"><img src="./Movie Images/jigar.webp" height="250px" width="180px" >
+        <h3>Jigarthanda</h3>
+        <h4>Action/comedy</h4>
+        </div>
+        </a>
+        <a href="./Page - movie description/vadachennai_page.html" ><div class="mimg"><img src="./Movie Images/vadachennai.jpg" height="250px" width="180px">
+            <h3>Vada Chennai</h3>
+            <h4>Action/Thriller</h4>
+            </div>
+            </a>
+            <a href="./Page - movie description/kaithi_page.html"><div class="mimg"><img src="./Movie Images/kaithi.jpg" height="250px" width="180px">
+                <h3>Kaithi</h3>
+                <h4>Action/Thriller</h4>
+                </div>
+                </a>
+                <a href="./Page - movie description/ccv.html"><div class="mimg"><img src="./Movie Images/ccv.webp" height="250px" width="180px">
+                    <h3>Chekka chivantha <br>vaanam</h3>
+                    <h4>Action/Thriller</h4>
+                    </div>
+                    </a>
+    <a href="./Page - movie description/withlove.html"><div class="mimg"><img src="./Movie Images/withlove.webp" height="250px" width="180px">
+        <h3>With Love</h3>
+        <h4>Romantic/Comedy</h4>
+        </div>
+        </a>
+        <!-- move icons -->
+        <a  href="#movielast"><i id="movenext" class="fa-solid fa-angle-right"></i></a>
+        <a  href="#moviefirst"><i id="moveback" class="fa-solid fa-angle-right" style="  transform: scaleX(-1);"></i></a>
+<a href="#"><div class="mimg"><img src="./Movie Images/comali.webp" height="250px" width="180px" >
+    <h3>Comali</h3>
+    <h4>Drama/comedy</h4>
+    </div>
+    </a>
+    <a href="./Page - movie description/dhurandhur_page.html"><div class="mimg"><img src="./Movie Images/dhurandhar.webp" height="250px" width="180px">
+        <h3>Dhurandhar</h3>
+        <h4>Action/Thriller</h4>
+        </div>
+        </a>
+        <a href="#"><div class="mimg"><img src="./Movie Images/super deluxe.jpg" height="250px" width="180px">
+            <h3>Super Deluxe</h3>
+            <h4>Drama/Thriller</h4>
+            </div>
+            </a>
+            <a href="./Page - movie description/vikram_page.html"><div class="mimg"><img src="./Movie Images/vikram.webp" height="250px" width="180px">
+                <h3>Vikram</h3>
+                <h4>Action/Thriller</h4>
+                </div>
+                </a>
+                <a href="#"><div id="movielast" class="mimg"><img src="./Movie Images/pariyerumperumal.jpg" height="250px" width="180px">
+                    <h3>Pariyerum Perumal</h3>
+                    <h4>Action/Drama</h4>
+                    </div>
+                    </a>
+</div>
+</div>
+
+<div class="ad">
+    <img src="./homepage ad.avif" alt="ad" height="30%" width="90%" style="margin: auto;">
+</div>
+
+<div class="liveevents">
+   <div> <h2>The Best Of Live Events</h2> </div>
+    <div class="eventimg">
+   <a> <img src="./live events homepage/amusement-parks.jpg" id="first"> </a>
+   <a> <img src="./live events homepage/arts-crafts-collection.jpg"> </a>
+   <a> <img src="./live events homepage/comedy-shows.jpg"> </a>
+   <a> <img src="./live events homepage/dance-classes.jpg"> </a>
+   <a> <img src="./live events homepage/interactive-games-.jpg"> </a>
+
+   <a  href="#last"><i  class="fa-solid fa-angle-right"></i></a>
+   <a  href="#first"><i  class="fa-solid fa-angle-right" style="  transform: scaleX(-1);"></i></a>
+
+   <a> <img src="./live events homepage/kids-banner.jpg"> </a>
+   <a> <img src="./live events homepage/music-shows.jpg"> </a>
+   <a> <img src="./live events homepage/comedy-shows.jpg"> </a>
+   <a> <img src="./live events homepage/theatre-shows.jpg"> </a>
+   <a id="last"> <img src="./live events homepage/workshop-and-more.jpg"> </a>
+ </div>
+</div>
+
+<!-- chapter 6 premire video -->
+
+<div class="premire">
+<div>
+    <img src="./Priemere/priemere.avif" width="90%">
+</div>
+<div>
+    <h2 style="margin-bottom: 5px;">Premieres</h2>
+    <p>Brand new releases every Friday</p>
+</div>
+<div class="premiremovies">
+    <a href="#"><div class="premireimg"><img src="./Priemere/wardriver.webp" height="300px" width="200px" >
+        <h3>Wardriver</h3>
+        <p>English</p>
+        </div>
+        </a>
+        <a href="#"><div class="premireimg"><img src="./Priemere/missterious.webp" height="300px" width="200px">
+            <h3>Missterious</h3>
+            <p>English</p>
+            </div>
+            </a>
+            <a href="#"><div class="premireimg"><img src="./Priemere/inuya shiki.webp" height="300px" width="200px">
+                <h3>Inuya Shiki</h3>
+                <p>Japanese</p>
+                </div>
+                </a>
+                <a href="#"><div class="premireimg"><img src="./Priemere/mummy.webp" height="300px" width="200px">
+                    <h3>Mummy</h3>
+                    <p>English</p>
+                    </div>
+                    </a>
+</div>
+</div>
+
+<!-- Chapter 7 : The music Studio images -->
+
+<div class="musicshow">
+    <div class="top musictop">
+    <h1>Your Music Shows</h1>
+   <a href="#"> see all <i class="fa-solid fa-angle-right"></i> </a>
+</div>
+<div class="musicframe">
+
+<div class="musicimg">
+    <a href="#"><div id="musicfirst" class="msimg"><img src="./Music Show/ilayaraja.webp" height="100%" width="90%" >
+    <h3>Ilayaraaja Live In Vellore</h3>
+    <p>Ambalal Convention Ground:<br>Vellore<br>Concerts</p>
+    </div>
+    </a>
+    <a href="#"><div class="msimg"><img src="./Music Show/open air night.webp" height="100%" width="90%">
+        <h3>Open Air Jamming Night at many</h3>
+        <p>Music academy chennai<br>Concerts</p>
+        </div>
+        </a>
+        <a href="#"><div class="msimg"><img src="./Music Show/saindhavi.webp" height="100%" width="90%">
+            <h3>Saindhavi Live on Stage</h3>
+            <p>S A College of arts and science College<br>Concerts</p>
+            </div>
+            </a>
+            <a href="#"><div class="msimg"><img src="./Music Show/guns n roses.webp" height="100%" width="90%">
+                <h3>Gun n Roses: india 2026 </h3>
+                <p>Ganaphara Vetenary Ground<br>Concerts</p>
+                </div>
+                </a>
+<a href="#"><div class="msimg"><img src="./Music Show/symphony.webp" height="100%" width="90%">
+    <h3>Lydians Symphony No:1</h3>
+    <p>Mandara Gardens : Chennai<br>Concerts</p>
+    </div>
+    </a>
+    <a  href="#musiclast"><i id="movenext" class="fa-solid fa-angle-right"></i></a>
+    <a  href="#musicfirst"><i id="moveback" class="fa-solid fa-angle-right" style="  transform: scaleX(-1);"></i></a>
+<a href="#"><div class="msimg"><img src="./Music Show/taylor wift.webp" height="100%" width="90%" >
+    <h3>Swift-Chella An taylor music show</h3>
+    <p>Venue to be announced<br>Club gigs</p>
+</div>
+</a>
+<a href="#"><div class="msimg"><img src="./Music Show/yuvan.webp" height="100%" width="90%">
+    <h3>Suryan FM with yuvan - Pudhuchery</h3>
+    <p>Expo Ground : pudhuchery<br>Concerts</p>
+    </div>
+    </a>
+    <a href="#"><div class="msimg"><img src="./Music Show/weekend.webp" height="100%" width="90%">
+        <h3>The weekend night chennai music-shows</h3>
+        <p>Media the stage : Alwarpet<br>Concerts</p>
+        </div>
+        </a>
+        <a href="#"><div class="msimg"><img src="./Music Show/vj anrony.webp" height="100%" width="90%">
+            <h3>Open Air Jamming Night at many</h3>
+            <p>Music academy chennai<br>Concerts</p>
+            </div>
+            </a>
+            <a href="#"><div id="musiclast" class="msimg"><img src="./Music Show/thaman.webp" height="100%" width="90%">
+                <h3>OG tour With Thaman at Stadium</h3>
+                <p>YMCA Grounds chennai<br>Concerts</p>
+                </div>
+                </a>
+</div>
+</div>
+</div>
+
+</main>
+<!-- Chapter:8 Footer Page -->
+<footer>
+<div class="footerframe">
+
+    <!-- footer Top -->
+    <div class="contacttodaybar">
+       <div class="footer-listshow"> 
+        <i class="fa-solid fa-camera-retro"></i>
+        <p><b>List Your Show</b></p>
+        <p>Got a show,events,activity or partner with us? get list your show with BookMyShow</p>
+    </div>
+    <div class="contact">
+<a href="#">Contact Today!</a>
+    </div>
+    </div>
+
+        <!-- footer mid -->
+
+        <div class="footer-mid-frame">
+            <div class="footermid-icons">
+              <i class="fa-solid fa-headset"></i>
+                <p>24/7 CUSTOMER CARE</p>
+            </div>
+            <div class="footermid-icons">
+                <i class="fa-solid fa-ticket"></i>
+                <p>RESEND BOOKING CONFIRMATION</p>
+            </div>
+            <div class="footermid-icons">
+                <i class="fa-regular fa-envelope-open"></i>
+<p>SUBSCRIBE TO THIS NEWSLETTER</p>
+            </div>
+        </div>
+
+        <!-- footer bottom All contents -->
+<div class="footer-downinfo">
+
+   <div class="footer-movieinfocontainer">
+   <h4>MOVIES NOW SHOWING IN CHENNAI</h4>
+    <div class="footer-movielinks">
+        <a href="#">Blast</a>
+        <span>|</span>
+        <a href="#">Parimala and Co</a>
+        <span>|</span>
+        <a href="#">Obsession</a>
+        <span>|</span>
+        <a href="#">Peddi</a>
+        <span>|</span>
+        <a href="#">Karuppu</a>
+        <span>|</span>
+        <a href="#">Double occupancy</a>
+        <span>|</span>
+        <a href="#">Disclosure Day</a>
+        <span>|</span>
+        <a href="#">He-Man and The masters of Universe</a>
+        <span>|</span>
+        <a href="#">Backrooms</a>
+    </div>
+</div>
+<div class="footer-movieinfocontainer">
+    <h4>UPCOMING MOVIES PER WEEK</h4>
+     <div class="footer-movielinks">
+         <a href="#">Upcoming Movies Today</a>
+         <span>|</span>
+         <a href="#">Upcoming Movies Tomorrow</a>
+         <span>|</span>
+         <a href="#">Upcoming Movies This Weekend</a>
+     </div>
+ </div>
+ <div class="footer-movieinfocontainer">
+    <h4>MOVIES BY GENRE</h4>
+     <div class="footer-movielinks">
+         <a href="#">Drama Movies</a>
+         <span>|</span>
+         <a href="#">Thriller Movies</a>
+         <span>|</span>
+         <a href="#">Comedy Movies</a>
+         <span>|</span>
+         <a href="#">Action Movies</a>
+         <span>|</span>
+         <a href="#">Crime Movies</a>
+         <span>|</span>
+         <a href="#">Romantic Movies</a>
+         <span>|</span>
+         <a href="#">Fantasy Movies</a>
+         <span>|</span>
+         <a href="#">Musical Movies</a>
+         <span>|</span>
+         <a href="#">Adventure Movies</a>
+     </div>
+ </div>
+ <div class="footer-movieinfocontainer">
+    <h4>COUNTRIES</h4>
+     <div class="footer-movielinks">
+         <a href="#">Indonesia</a>
+         <span>|</span>
+         <a href="#">Singapore</a>
+         <span>|</span>
+         <a href="#">Sri lanka</a>
+         <span>|</span>
+         <a href="#">West Indies</a>
+     </div>
+ </div>
+ <div class="footer-movieinfocontainer">
+ <h4>HELP</h4>
+  <div class="footer-movielinks">
+      <a href="#">About Us</a>
+      <span>|</span>
+      <a href="#">Contact Us</a>
+      <span>|</span>
+      <a href="#">Current Opening</a>
+      <span>|</span>
+      <a href="#">Press Release</a>
+      <span>|</span>
+      <a href="#">FAQs</a>
+      <span>|</span>
+      <a href="#">Terms And Conditions</a>
+      <span>|</span>
+      <a href="#">Privacy policy</a>
+  </div>
+</div>
+
+<!-- Footer The logo section -->
+
+<div class="footer-logo">
+    <hr>
+    <img src="./PngItem_1896899.png" alt="BookMyShow">
+    <hr>
+</div>
+</div>
+
+<div class="social-icons">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<div class="copyright">
+<p >
+    © 2026 BookMyShow Entertainment Pvt. Ltd. All Rights Reserved.<br>
+    The content and images used on this site are copyright protected.
+    Unauthorized use is strictly prohibited.<br>
+    Privacy Policy | Terms of Use | Contact Us
+  </p>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

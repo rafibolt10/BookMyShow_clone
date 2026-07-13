@@ -1,0 +1,1355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The Top Logo bar and buttons */
+
+body{
+    height: 2000px;
+    font-family: 'Roboto', sans-serif;
+    overflow:auto;
+}
+.toplogopanel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.searchbar{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    padding: 6px;
+    padding-right: 200px;
+    cursor: text;
+    border-radius: 5px;
+}
+#searchbar{
+    border: none;
+    outline: none;
+    width: 350px;
+}
+.locations{
+    margin-left: auto;
+    cursor: pointer;
+}
+#locations{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.signin{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+
+/* The hamburger Side menu */
+
+.side{
+    font-size: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.fa-bars{
+    cursor: pointer;
+}
+/* Checkbox hidden */
+#menu-toggle{                    
+    display:none;
+    cursor: pointer;
+}
+/* if checked means the container on right */
+body:has(#menu-toggle:checked) .sidemenu-container{
+    right:0;
+}
+
+
+.close-btn{
+    font-size:17px;
+    cursor:pointer;
+    display:inline;
+    padding:15px;
+    margin-left: 260px;
+}
+
+/* The hamburger Side menu */
+
+/* the side menu container */
+.sidemenu-container{
+    height: 100vh;
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    z-index: 3;
+    transition:0.4s;
+}
+.sidemaininfoblock:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+
+.sidemenu-topinfo{
+display: flex;
+flex-direction: column;
+padding: 10px;
+gap: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.sidbarlogininfo img{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+.sidbarlogininfo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid gainsboro;
+}
+.sidbarlogininfo a{
+    text-decoration: none;
+    color: #EC5E71;
+    border: 1px solid #EC5E71 ;
+    padding: 10px;
+}
+.sidemaininfo-container{
+    height: 100%;
+    overflow: auto;
+}
+.sidemaininfoblock{
+    height: 70px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-left: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #919191;
+}
+.sidemaininfoblock p{
+    color: #bababa;
+    font-size: 13px;
+}
+.sidemaininfoblock img{
+    height: 25px;
+    width: 25px;
+}
+.sidemaininfoblock i{
+    color: rgb(74, 74, 74);
+    font-size: 20px;
+}
+.sidebarinfos{
+    width: 70%;
+}
+
+/* The Second menus on top bar list and hyperlinks menus */
+
+.secondtopmenu{
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.secondtopmenu a{
+    text-decoration: none;
+    color: black;
+}
+.secondtopmenu div{
+    cursor: pointer;
+}
+.movies{
+    margin-left: 40px;
+}
+.listyourshow{
+margin-left:auto ;
+}
+.gift{
+    margin-right: 40px;
+}
+
+/* scroll image  */
+
+.scroll{
+    height: 330px;
+    width: 98%;
+    margin:10px auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+/* .scroll .div i{
+  position: absolute;
+  right: 20px;
+  top: 130px;
+  padding: 20px;
+  padding-right: 30px;
+  color: white;
+  background-color: rgb(96, 96, 96,0.5);
+}
+.scroll .div img{
+    border-radius: 30px;
+}
+#leftscroll{
+    position: relative;
+    top: 130px;
+    padding: 20px;
+  padding-right: 30px;
+    right: 1220px;
+    color: white;
+    background-color: rgb(96, 96, 96,0.5);
+ } 
+.div{
+    display: inline-block;
+    position: relative;
+} */
+.slider-track img{
+    border-radius: 30px;
+}
+/* slide animation */
+.slider-track{
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: autoscroll 18s linear infinite;
+ cursor: pointer;
+ overflow: hidden;
+}
+
+@keyframes autoscroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.slider-track:hover{
+    animation-play-state: paused;
+}
+
+/* Chapter 4 : Recommended Movie images with manual scroll*/
+
+.moviesframe{
+height: 400px;
+width: 95%;
+margin: auto;
+white-space: nowrap ;
+overflow: hidden;
+scroll-behavior: smooth;
+}
+.top{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.moviesimg{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+   margin-left: 30px;
+}
+/* Font styles on Recommended movies */
+.moviesimg a{
+    text-decoration: none;
+}
+.moviesimg h3{
+    color: black;
+}
+.moviesimg h4{
+    color:grey;
+}
+.top a{
+    text-decoration: none;
+    color: #DF1827;
+}
+.mimg{
+    /* background-color: rgb(255, 164, 45); */
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+   
+  /* justify-content: center;
+  align-items: center;   */
+}
+.mimg img{
+
+    border-radius: 30px;
+}
+#movenext{
+    position: relative;
+  right: 40px;
+  top: 130px;
+  padding: 20px;
+  padding-right: 30px;
+  color: white;
+  background-color: rgb(96, 96, 96,0.5);
+  border-radius: 40%;
+}
+#moveback{
+    position: relative;
+  right: 40px;
+  left: 0px;
+  top: 130px;
+  padding: 20px;
+  padding-right: 30px;
+  color: white;
+  background-color: rgb(96, 96, 96,0.5);
+  border-radius: 40%;
+}
+
+.livevents{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.ad{
+    display: flex;
+}
+
+/* Chapter 5 : Live events manual scroll*/
+.liveevents{
+display: flex;
+flex-direction: column;
+width: 95%;
+margin:40px auto;
+}
+
+.eventimg{
+    display: flex;
+    gap:30px;
+    height: 300px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.eventimg img{
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* chapter 6 primere */
+
+.premire{
+    background-color: #2B3149;
+    height: 105vh;
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    color: white;
+}
+.premiremovies{
+    display: flex;
+    gap:70px;
+}
+.premireimg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.premiremovies a{
+    text-decoration: none;
+    color: white;
+}
+
+/* chapter 7 Music Album */
+
+.musicshow{
+    height: 95vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.musicframe{
+    height: 450px;
+width: 95%;
+margin: auto;
+white-space: nowrap ;
+overflow: hidden;
+scroll-behavior: smooth;
+}
+.musictop{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.musicimg{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 10px auto;
+   margin-left: 30px;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   white-space: normal;
+}
+/* Font styles on Recommended movies */
+.musicimg a{
+    text-decoration: none;
+}
+.musicimg h3{
+    color: black;
+}
+.musicimg p{
+    color:grey;
+}
+.top a{
+    text-decoration: none;
+    color: #DF1827;
+}
+.msimg{
+    /* background-color: rgb(255, 164, 45); */
+    height: 350px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+  /* justify-content: center;
+  align-items: center;   */
+}
+.msimg img{
+
+    border-radius: 30px;
+}
+#movenext{
+    position: relative;
+  right: 40px;
+  top: 130px;
+  padding: 20px;
+  padding-right: 30px;
+  color: white;
+  background-color: rgb(96, 96, 96,0.5);
+  border-radius: 40%;
+}
+#moveback{
+    position: relative;
+  right: 40px;
+  left: 0px;
+  top: 130px;
+  padding: 20px;
+  padding-right: 30px;
+  color: white;
+  background-color: rgb(96, 96, 96,0.5);
+  border-radius: 40%;
+}
+
+/* chapter 8: footer css
+ Icons Section                  
+background-color: #404043; 
+Contact Today Button
+background-color: #EC5E71;
+color: #FFFFFF;
+Main Text (Headings)
+color: #A5A5A5;
+Center Icons Section
+background-color: #404043;
+Icon Color
+color: #A5A5A5;
+*/
+
+.footerframe{
+    height: 50%;
+    background-color: #333338;
+}
+/* <!-- footer Top --> */
+
+.contacttodaybar{
+    height: 80px;
+    padding: 40px;
+display: flex;
+flex-direction: row;
+gap: 30px;
+align-items: center;
+justify-content: space-between;
+color: white;
+}
+.footer-listshow{
+    display: flex;
+    gap:20px;
+    
+}
+.contact a{
+    background-color: #EC5E71;
+    color: white;
+    text-decoration: none;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+links a{
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.footer-links span{
+    color: #555;
+}
+
+/* <!-- footer MID --> */
+
+.footer-mid-frame{
+    height: 100px;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footermid-icons{
+text-align: center;
+color: #949494;
+cursor: pointer;
+}
+.footermid-icons i{
+    font-size: 40px;
+}
+.footermid-icons:hover{
+    color: white;
+}
+
+/* <!-- footer bottom All contents --> */
+
+.footer-downinfo{
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.footer-movieinfocontainer{
+    height: 100px;
+    margin-left: 2%;
+    display: flex;
+    font-size: 15px;
+    gap:20px;
+flex-direction: column;
+color: #ababab;
+justify-content: center;
+}
+.footer-movieinfocontainer h4{
+    font-weight: 30px;
+    font-size: 14px;
+}
+.footer-movielinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.footer-movielinks a{
+    text-decoration: none;
+    color: #919191;
+}
+.footer-movielinks a:hover{
+    color: white;
+}
+
+/* footer logo */
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0px 30px;
+}
+
+.footer-logo hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #bababa;
+}
+
+.footer-logo img{
+    height: 40px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555;
+    color: #A5A5A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    background-color: white;
+    color: #333338;
+}
+.copyright {
+    padding: 40px;
+    font-size: 12px;
+    color: #9e9e9e;
+    line-height: 1.5;
+    text-align: center;
+  }
+/* ******************************************************************************************************
+********************************************************************************************************* */
+
+/* Responsiveness section */
+
+/* mobile devices */
+
+@media (max-width: 480px){ 
+.toplogopanel{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    padding-bottom: 5px;
+}
+.logo img{
+    width: 50px;
+    height: 20px;
+    display: none;
+}
+.logo{
+    background-image: url(./bookmyshow-logo.png);
+  background-size: cover;
+    z-index: 0;
+    height: 50px;
+    width: 120px;
+    margin-top: 5px;
+    margin: 1px auto;
+    cursor: pointer;
+}
+.searchbar{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    padding: 3px;
+    padding-right: 20px;
+    cursor: text;
+    border-radius: 5px;
+    margin-left: 17px;
+}
+.locations {
+    cursor: pointer;
+    margin-right: 200px;
+}
+#locations{
+    font-size: 12px;
+}
+.signin{
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.side{
+    font-size: 15px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.secondtopmenu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 10px;
+}
+.listyourshow,.movies {
+    margin-left:0px ;
+    }
+
+    .scroll{
+        height: 120px;
+        width: 90%;
+        margin:10px auto;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        white-space: nowrap;
+        gap: 10px;
+        scroll-behavior: smooth;
+    }
+    .slider-track img{
+        height: 100px;
+        border-radius: 8px;
+    }
+    .slider-track{
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        animation: autoscroll 18s linear infinite;
+     cursor: pointer;
+    }
+    
+@keyframes autoscroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+    .slider-track:hover{
+        animation-play-state: paused;
+    }
+    .top{
+        width: 70%;
+        font-size: 10px;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .moviesframe{
+        height: 270px;
+        width: 90%;
+        margin: auto;
+        white-space: nowrap ;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        }
+    .moviesimg{
+        display: flex;
+        width: 100%;
+        height: 230px;
+        margin: auto;
+       margin-left: 2px;
+       gap: 20px;
+       overflow: auto;
+    }
+    .mimg{
+        /* background-color: rgb(255, 164, 45); */
+        height: 150px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+        font-size: 9px;
+       
+      /* justify-content: center;
+      align-items: center;   */
+    }
+    .mimg img{
+    height: 120px;
+    width: 90px;
+        border-radius: 30px;
+    }
+    #movenext{
+        display: none;
+    }
+    #moveback{
+        display: none;
+    }
+    .ad{
+        width: 80%;
+        margin-left: 5px;
+    }
+.liveevents{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin:20px auto;
+        }
+
+.eventimg{
+            display: flex;
+            gap:20px;
+            height: 150px;
+            align-items: center;
+            width: 95%;
+            margin: auto;
+            white-space: nowrap;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+.eventimg img{
+            height: 100px;
+            border-radius: 20px;
+        }
+.eventimg i{
+            display: none;
+        }
+    
+.premire{
+    background-color: #2B3149;
+    height: 90vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 1px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    color: white;
+}
+.premireimg img{
+    height: 150px;
+    width: 100px;
+}
+.premiremovies a{
+    height: 200px;
+    width: 50px;
+}
+.premiremovies{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.premireimg{
+    height: 130px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.premiremovies a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.musicshow{
+    height: 60vh;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.musicframe{
+    height: 250px;
+width: 95%;
+margin-left: 0px;
+white-space: nowrap ;
+overflow: scroll;
+scroll-behavior: smooth;
+}
+.musicimg img{
+    height: 150px;
+    width: 100px;
+}
+.msimg{
+    height: 250px;
+    width: 120px;
+    gap: 8px;
+    font-size: 8px;
+}
+.footerframe{
+    height: 50%;
+    background-color: #333338;
+}
+.contacttodaybar{
+    height: 80px;
+    width: 90%;
+    padding: 5px 8px;
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+justify-content: space-between;
+color: white;
+font-size: 8px;
+}
+.footer-listshow{
+    width: 200px;
+    display: flex;
+    padding: 20px;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.contact a{
+    background-color: #EC5E71;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer-mid-frame{
+    height: 50px;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5px;
+}
+.footermid-icons i{
+    font-size: 25px;
+}
+.footer-downinfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-movieinfocontainer{
+        height: 60px;
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 10px;
+        display: flex;
+        font-size: 9px;
+        gap:5px;
+    flex-direction: column;
+    color: #ababab;
+    justify-content: center;
+    }
+    .footer-movieinfocontainer h4{
+        font-weight: 30px;
+        font-size: 10px;
+    }
+    .footer-movielinks{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .footer-movielinks a{
+        text-decoration: none;
+        color: #919191;
+    }
+    .footer-movielinks a:hover{
+        color: white;
+    }
+    .footer-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 10px 0px 10px;
+        width: 100%;
+    }
+    .footer-logo img{
+       height: 20px; 
+    }
+    .social-icons{
+        width: 100%;
+    }
+    .social-icons i{
+        font-size: 8px;
+    }
+.social-icons a{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #555;
+    color: #A5A5A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.copyright {
+    width: 100%;
+    font-size: 8px;
+    color: #9e9e9e;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+}
+
+
+/* Tablet View */
+
+@media (min-width: 481px) and (max-width:991.98px)
+{ 
+    .toplogopanel{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    .logo img{
+        width: 50px;
+        height: 20px;
+        display: none;
+    }
+    .logo{
+        background-image: url(./bookmyshow-logo.png);
+      background-size: cover;
+        z-index: 0;
+        height: 50px;
+        width: 100px;
+        margin-top: 5px;
+        margin: 1px auto;
+        cursor: pointer;
+    }
+    .searchbar{
+        border: 1px solid rgb(180, 180, 180);
+        background-color: white;
+        padding: 3px;
+        padding-right: 20px;
+        cursor: text;
+        border-radius: 5px;
+    }
+    .locations {
+        cursor: pointer;
+        /* margin-right: auto; */
+    }
+    #locations{
+        font-size: 12px;
+    }
+    .signin{
+        background-color: red;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 10px;
+        font-size: 10px;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    }
+    .side{
+        font-size: 15px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .secondtopmenu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+        font-size: 15px;
+    }
+    .listyourshow{
+        margin-left:auto ;
+        }
+
+        .scroll{
+            height: 220px;
+            width: 100%;
+            margin:10px auto;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            white-space: nowrap;
+            gap: 10px;
+            scroll-behavior: smooth;
+        }
+        .slider-track img{
+            height: 200px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .slider-track{
+            display: flex;
+            gap: 10px;
+            width: max-content;
+            animation: autoscroll 18s linear infinite;
+         cursor: pointer;
+        }
+        @keyframes autoscroll{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+    
+        .slider-track:hover{
+            animation-play-state: paused;
+        }
+        .top{
+            width: 90%;
+            font-size: 13px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .moviesframe{
+            height: 350px;
+            width: 90%;
+            margin: auto;
+            white-space: nowrap ;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            }
+        .moviesimg{
+            display: flex;
+            width: 100%;
+            height: 350px;
+            margin: auto;
+           margin-left: 2px;
+           gap: 20px;
+           overflow: auto;
+        }
+        .mimg{
+            /* background-color: rgb(255, 164, 45); */
+            height: 250px;
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+            font-size: 9px;
+           
+          /* justify-content: center;
+          align-items: center;   */
+        }
+        .mimg img{
+        height: 230px;
+        width:150px;
+            border-radius: 30px;
+        }
+        #movenext{
+            display: none;
+        }
+        #moveback{
+            display: none;
+        }
+        .ad{
+            width: 95%;
+            margin-left: 5px;
+        }
+        .liveevents{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin:40px auto;
+            }
+    
+            .eventimg{
+                display: flex;
+                gap:20px;
+                height: 300px;
+                align-items: center;
+                width: 95%;
+                margin: auto;
+                white-space: nowrap;
+                overflow: scroll;
+                scroll-behavior: smooth;
+            }
+            .eventimg img{
+                height: 200px;
+                border-radius: 20px;
+            }
+            .eventimg i{
+                display: none;
+            }
+        
+            .premire{
+        background-color: #2B3149;
+        height: 90vh;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 1px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 5px;
+        color: white;
+    }
+    .premireimg img{
+        height: 300px;
+        width: 200px;
+    }
+    .premiremovies a{
+        width: 40px;
+    }
+    .premiremovies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:10px;
+    }
+    .premireimg{
+        height: 300px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .premiremovies a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+    .musicshow{
+        height: 80vh;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .musicframe{
+        height: 400px;
+    width: 100%;
+    margin-left: 0px;
+    white-space: nowrap ;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    }
+    .musicimg img{
+        height: 250px;
+        width: 150px;
+    }
+    .msimg{
+        height: 350px;
+        width: 190px;
+        gap: 8px;
+        font-size: 12px;
+    }
+    .footerframe{
+        height: 50%;
+        background-color: #333338;
+    }
+    .contacttodaybar{
+        height: 100px;
+        width: 95%;
+        padding: 8px 11px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+    }
+    .footer-listshow{
+        width: 500px;
+        display: flex;
+        padding: 20px;
+        gap:10px;
+        flex-wrap: wrap;
+    }
+    .contact a{
+        background-color: #EC5E71;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .footer-mid-frame{
+        height: 50px;
+        width: 90%;
+        padding: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 12px;
+    }
+    .footermid-icons i{
+        font-size: 50px;
+    }
+    .footer-downinfo{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+        .footer-movieinfocontainer{
+            height: 70px;
+            width: 100%;
+            margin-left: 2%;
+            margin-top: 10px;
+            display: flex;
+            font-size: 14px;
+            gap:5px;
+        flex-direction: column;
+        color: #ababab;
+        justify-content: center;
+        }
+        .footer-movieinfocontainer h4{
+            font-weight: 30px;
+            font-size: 14px;
+        }
+        .footer-movielinks{
+            width: 95%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .footer-movielinks a{
+            text-decoration: none;
+            color: #919191;
+        }
+        .footer-movielinks a:hover{
+            color: white;
+        }
+        .footer-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0px 10px;
+            width: 100%;
+        }
+        .footer-logo img{
+           height: 30px; 
+        }
+        .social-icons{
+            width: 100%;
+        }
+        .social-icons i{
+            font-size: 8px;
+        }
+    .social-icons a{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #555;
+        color: #A5A5A5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+        color: #9e9e9e;
+        line-height: 1.5;
+        text-align: center;
+      }
+    
+    }

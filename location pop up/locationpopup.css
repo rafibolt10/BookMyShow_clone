@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    position: fixed;
+}
+
+.frame{
+    background-color: white;
+    height: 370px;
+    border-radius: 15px;
+    width: 80%;
+    margin:70px auto;
+    padding: 5px;
+    position: absolute;
+}
+.flex{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+.searchbar{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    padding: 10px;
+    padding-right: 200px;
+    cursor: text;
+    border-radius: 5px;
+    margin: 15px 15px 0px 15px;
+}
+#searchbar{
+    border: none;
+    outline: none;
+    width: 350px;
+}
+.detectloc{
+    color: #DF1827;
+    margin: 10px 0px 10px 10px;
+    cursor: pointer;
+}
+.detectloc i{
+    margin-right: 10px;
+}
+.cityframe{
+    text-align: center;
+    border-top: 1px solid grey;
+}
+.cityframe p{
+    margin-top: 15px;
+}
+.cityimgs{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(83, 83, 83);
+    padding-top: 15px;
+    cursor: pointer;
+}
+.allcities{
+    color: #DF1827;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.cityimgs div:hover{
+    color: black;
+}

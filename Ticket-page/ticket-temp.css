@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.ticket-container{
+    width:420px;
+}
+
+.ticket{
+    background:#1f2343;
+    padding:20px;
+    border-radius:8px;
+    position:relative;
+}
+
+.ticket-header h2{
+    color:white;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.ticket-header span{
+    background:#e53935;
+    color:white;
+    padding:2px 6px;
+    border-radius:4px;
+}
+
+.movie-details{
+    background:white;
+    padding:15px;
+    border-radius:6px 6px 0 0;
+    display:flex;
+    gap:15px;
+    position:relative;
+}
+
+.movie-details img{
+    width:90px;
+    height:120px;
+    object-fit:cover;
+    border-radius:4px;
+}
+
+.info{
+    flex:1;
+}
+
+.format{
+    color:gray;
+    font-size:13px;
+}
+
+.info h1{
+    margin:5px 0;
+    font-size:34px;
+}
+
+.info p{
+    color:#555;
+    margin-bottom:6px;
+}
+
+.side-text{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    color:gray;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.seat-details{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    padding:12px 20px;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+}
+
+.seat-details span{
+    color:gray;
+    font-size:10px;
+}
+
+.seat-details h3{
+    margin-top:5px;
+    color:#333;
+}
+
+.qr-section{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-radius:0 0 6px 6px;
+}
+
+.qr-section img{
+    width:180px;
+}
+
+.qr-section p{
+    margin-top:10px;
+    color:#666;
+}
+
+.note{
+    background:#1f2343;
+    color:white;
+    padding:15px 20px;
+    font-size:14px;
+    position: relative;
+    bottom: 10px;
+}
+.qrcode{
+    background-color: #ccc;
+    background-image: url(./tickt.jpg);
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-size: cover;
+}
+
+/* Ticket cuts */
+
+.cut{
+    width:22px;
+    height:22px;
+    background:#f3f3f3;
+    border-radius:50%;
+    position:absolute;
+}
+
+.left1{
+    left:-11px;
+    top:165px;
+}
+
+.right1{
+    right:-11px;
+    top:165px;
+}
+
+.left2{
+    left:-11px;
+    top:270px;
+}
+
+.right2{
+    right:-11px;
+    top:270px;
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The Top Logo bar and buttons */
+
+.toplogopanel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.searchbar{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    padding: 6px;
+    padding-right: 200px;
+    cursor: text;
+    border-radius: 5px;
+}
+#searchbar{
+    border: none;
+    outline: none;
+    width: 350px;
+}
+.locations{
+    margin-left: auto;
+    cursor: pointer;
+}
+#locations{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.signin{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.side{
+    font-size: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* The Second menus on top bar list and hyperlinks menus */
+
+.secondtopmenu{
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.secondtopmenu div{
+    cursor: pointer;
+}
+.movies{
+    margin-left: 40px;
+}
+.listyourshow{
+margin-left:auto ;
+}
+.gift{
+    margin-right: 40px;
+}
+

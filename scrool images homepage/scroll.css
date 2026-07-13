@@ -1,0 +1,33 @@
+/* .scroll{
+    height: 330px;
+    width: 98%;
+    margin:10px auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    gap: 10px;
+    scroll-behavior: smooth;
+} */
+.slider-track img{
+    border-radius: 30px;
+}
+.slider-track{
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: autoscroll 15s linear infinite;
+}
+
+@keyframes autoscroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.slider-track:hover{
+    animation-play-state: paused;
+}

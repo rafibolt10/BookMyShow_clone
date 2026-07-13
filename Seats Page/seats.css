@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+  .topelite{
+    display: flex;
+    gap: 150px;
+  }
+  
+  /* MAIN LAYOUT */
+  .seat-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ROW LABELS */
+ 
+.elitealphabets{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-size: 18px;
+    align-items: center;
+    padding: 5px 4px;
+    color: #666;
+    gap: 19px;
+}
+  
+  /* SEAT GRID */
+  .seats {
+    display: flex;
+    gap: 80px;
+  }
+  
+  /* LEFT & RIGHT BLOCK */
+  .left, .right {
+    display: grid;
+    grid-template-columns: repeat(10, 32px);
+    gap: 8px;
+  }
+  
+  /* SEAT STYLE */
+  .seat {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 1.5px solid green;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  /* HIDE CHECKBOX */
+  .seat input {
+    display: none;
+  }
+  
+  /* NUMBER INSIDE */
+  .seat span {
+    font-size: 12px;
+    color:#666;
+  }
+  
+  /* HOVER */
+  .seat:hover {
+    background: #1ea83c;
+    color: white;
+  }
+  
+  /* SELECTED SEAT */
+  .seat input:checked + span {
+    background: #1ea83c;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0px;
+  }
+  
+ 
+  .seat span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  #myDiv3 {
+    margin: auto;
+    transform: rotateX(80deg);
+    width: 400px;
+    height: 100px;
+    border-top-left-radius:50px;
+    border-top-right-radius: 50px;
+    background-color: rgb(175, 242, 255);
+    border: 10px solid rgb(130, 129, 129);
+    padding: 10px;
+    perspective: 100px;
+  }
+
+  .scroll-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+   
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 60%;
+}
+
+@media (max-width: 480px){
+  .topelite{
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* MAIN LAYOUT */
+  .seat-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ROW LABELS */
+ 
+.elitealphabets{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-size: 8px;
+    align-items: center;
+    padding: 5px 7px;
+    color: #666;
+    gap: 15px;
+}
+  
+  /* SEAT GRID */
+  .seats {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* LEFT & RIGHT BLOCK */
+  .left, .right {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    gap: 4px;
+  }
+  
+  /* SEAT STYLE */
+  .seat {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1.5px solid green;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  /* HIDE CHECKBOX */
+  .seat input {
+    display: none;
+  }
+  
+  /* NUMBER INSIDE */
+  .seat span {
+    font-size: 7px;
+    color:#666;
+  }
+  
+  /* HOVER */
+  .seat:hover {
+    background: #1ea83c;
+    color: white;
+  }
+  
+  /* SELECTED SEAT (GREEN LIKE BOOKMYSHOW) */
+  .seat input:checked + span {
+    background: #1ea83c;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0px;
+  }
+  
+  /* OPTIONAL: wrap span full */
+  .seat span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  #myDiv3 {
+    transform: rotateX(80deg);
+    width: 330px;
+    height: 100px;
+    border-top-left-radius:50px;
+    border-top-right-radius: 50px;
+    background-color: rgb(175, 242, 255);
+    border: 10px solid rgb(130, 129, 129);
+    padding: 10px;
+    perspective: 100px;
+    margin-right: 20px ;
+  }
+
+  .scroll-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+   
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 60%;
+}
+}

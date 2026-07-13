@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The Top Logo bar and buttons */
+body{
+    line-height: 1.5;
+
+}
+.toplogopanel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.searchbar{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    padding: 6px;
+    padding-right: 200px;
+    cursor: text;
+    border-radius: 5px;
+}
+#searchbar{
+    border: none;
+    outline: none;
+    width: 350px;
+}
+.locations{
+    margin-left: auto;
+    cursor: pointer;
+}
+#locations{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.signin{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.side{
+    font-size: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* The Second menus on top bar list and hyperlinks menus */
+
+
+
+  
+
+.secondtopmenu{
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.secondtopmenu div{
+    cursor: pointer;
+}
+.movies{
+    margin-left: 40px;
+}
+.listyourshow{
+margin-left:auto ;
+}
+.gift{
+    margin-right: 40px;
+}
+
+/* <!-- movie image display section --> */
+
+/* The videoplayback */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    /* overflow: hidden; */
+  }
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* IMPORTANT */
+    z-index: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+     to bottom right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+
+.moviedisplay-frame{
+    /* background-color: rgb(93, 93, 93);  */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 3;
+ }
+ .moviedisplay-leftalign{
+    z-index: 3;
+ }
+ .moviedisplay-frame img{
+    border-radius: 20px;
+    z-index: 3;
+ }
+ .moviedisplay-rightalign{
+    height: 400px;
+    width: 70%;
+    display: flex;
+   gap: 20px;
+    flex-direction: column;
+    color: white;
+    z-index: 3;
+   
+ }
+ .share {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* or flex-start */
+}
+ .share button{
+    background-color: rgb(0, 0, 0,0.5);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+ .booktickets-show a {
+    background: #f84464;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+.ratings p{
+    font-weight: bold; 
+}
+.ratingnumber{
+font-weight: bold;
+font-size: 25px;
+}
+#star{
+    color: #f84464;
+    font-size: 20px;
+}
+.ratings button{
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+ .lang-3d button {
+    background-color: gray;
+    margin-right: 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+/* movie information section */
+
+.Movie-information{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 5%;
+    gap: 40px;
+}
+.offersdiv{
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    gap: 15px;
+}
+.cardoffer{
+    border: 1.5px dashed orange;
+background-color:antiquewhite;
+padding: 2%;
+}
+
+.cast{
+    display: flex;
+    gap: 20px;
+}
+.castimgs img{
+    background-image: url(./cast\ dummy.jfif);
+    background-size: cover;
+}
+
+/* <!-- other movies section --> */
+
+.moviesframe{
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    white-space: nowrap ;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    }
+    .top{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .moviesimg{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+       margin-left: 30px;
+    }
+    /* Font styles on Recommended movies */
+    .moviesimg a{
+        text-decoration: none;
+    }
+    .moviesimg h3{
+        color: black;
+    }
+    .moviesimg h4{
+        color:grey;
+    }
+    .top a{
+        text-decoration: none;
+        color: #DF1827;
+    }
+    .mimg{
+        /* background-color: rgb(255, 164, 45); */
+        height: 350px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+       
+      /* justify-content: center;
+      align-items: center;   */
+    }
+    .mimg img{
+    
+        border-radius: 30px;
+    }
+    #movenext{
+        position: relative;
+      right: 40px;
+      top: 130px;
+      padding: 20px;
+      padding-right: 30px;
+      color: white;
+      background-color: rgb(96, 96, 96,0.5);
+      border-radius: 40%;
+    }
+    #moveback{
+        position: relative;
+      right: 40px;
+      left: 0px;
+      top: 130px;
+      padding: 20px;
+      padding-right: 30px;
+      color: white;
+      background-color: rgb(96, 96, 96,0.5);
+      border-radius: 40%;
+    }
+    
+    .footerframe{
+        height: 50%;
+        background-color: #333338;
+    }
+    /* <!-- footer Top --> */
+    
+    .contacttodaybar{
+        height: 80px;
+        padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    }
+    .footer-listshow{
+        display: flex;
+        gap:20px;
+        
+    }
+    .contact a{
+        background-color: #EC5E71;
+        color: white;
+        text-decoration: none;
+        padding: 18px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    
+    links{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    links a{
+        text-decoration: none;
+        color: #7f7f7f;
+    }
+    
+    .footer-links span{
+        color: #555;
+    }
+    
+    /* <!-- footer MID --> */
+    
+    .footer-mid-frame{
+        height: 100px;
+        padding: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footermid-icons{
+    text-align: center;
+    color: #949494;
+    cursor: pointer;
+    }
+    .footermid-icons i{
+        font-size: 40px;
+    }
+    .footermid-icons:hover{
+        color: white;
+    }
+    
+    /* <!-- footer bottom All contents --> */
+    
+    .footer-downinfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-movieinfocontainer{
+        height: 100px;
+        margin-left: 2%;
+        display: flex;
+        font-size: 15px;
+        gap:20px;
+    flex-direction: column;
+    color: #ababab;
+    justify-content: center;
+    }
+    .footer-movieinfocontainer h4{
+        font-weight: 30px;
+        font-size: 14px;
+    }
+    .footer-movielinks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .footer-movielinks a{
+        text-decoration: none;
+        color: #919191;
+    }
+    .footer-movielinks a:hover{
+        color: white;
+    }
+    
+    /* footer logo */
+    
+    .footer-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0px 30px;
+    }
+    
+    .footer-logo hr{
+        flex: 1;
+        border: none;
+        height: 1px;
+        background-color: #bababa;
+    }
+    
+    .footer-logo img{
+        height: 40px;
+    }
+    
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .social-icons a{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #555;
+        color: #A5A5A5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .social-icons a:hover{
+        background-color: white;
+        color: #333338;
+    }
+    .copyright {
+        padding: 40px;
+        font-size: 12px;
+        color: #9e9e9e;
+        line-height: 1.5;
+        text-align: center;
+      }
